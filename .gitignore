@@ -1,0 +1,6 @@
+node_modules/
+.hubot_history
+build
+coverage
+.vscode/
+.env

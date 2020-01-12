@@ -1,0 +1,31 @@
+{
+  "name": "hubot-gollum",
+  "version": "1.0.0",
+  "description": "Hubot based Bot for running the Gollum Bot at chat.tolkienforum.de",
+  "private": true,
+  "scripts": {
+    "start": "./node_modules/.bin/hubot",
+    "watch": "node ./node_modules/.bin/tsc -p . -w",
+    "build": "node ./node_modules/.bin/tsc -p .",
+    "lint": "node ./node_modules/tslint/bin/tslint --project .",
+    "debug": "node --inspect --inspect-brk -r dotenv/config node_modules/hubot/bin/hubot.js -a rocketchat",
+    "shell": "node -r dotenv/config node_modules/hubot/bin/hubot.js -a shell",
+    "local": "node -r dotenv/config node_modules/hubot/bin/hubot.js -a rocketchat"
+  },
+  "dependencies": {
+    "coffeescript": "^2.5.0",
+    "hubot": "3",
+    "hubot-games": "^1.0.0",
+    "hubot-help": "^1.0.1",
+    "hubot-rocketchat": "rocketchat/hubot-rocketchat",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.3.2",
+    "quizz": "^0.10.0",
+    "typescript": "^3.7.4"
+  },
+  "devDependencies": {
+    "@types/hubot": "^2.19.5",
+    "@types/node": "^13.1.6",
+    "tslint": "^5.20.1"
+  }
+}

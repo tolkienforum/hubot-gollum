@@ -1,0 +1,39 @@
+{
+	"extends": "tslint:latest",
+	"rules": {
+		"no-unused-expression": true,
+		"no-duplicate-variable": true,
+		"curly": true,
+		"class-name": true,
+		"semicolon": [
+			true,
+			"never"
+		],
+		"triple-equals": true,
+		"interface-name": [
+			false
+		],
+		"max-line-length": [
+			140
+		],
+		"quotemark": [
+			"single"
+		],
+		"ordered-imports": [
+			false
+		],
+		"arrow-parens": [
+			false
+		],
+		"one-line": [
+			"check-open-brace"
+		],
+		"max-classes-per-file": [
+			false
+		],
+		"object-literal-sort-keys": [
+			false
+		],
+		"no-bitwise": false
+	}
+}
