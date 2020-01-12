@@ -8,19 +8,19 @@ import { Robot } from 'hubot'
 import { RocketChatBotAdapter } from 'hubot-rocketchat'
 import { GameManager } from 'quizz'
 
-module.exports = async function example(robot: Robot<RocketChatBotAdapter>) {
+module.exports = async function quizz(robot: Robot<RocketChatBotAdapter>) {
 
     robot.helpCommands().push("qstart - Start the quizz")
     robot.helpCommands().push("qstop - Stop the quizz")
 
-    let quizz = null
+    let quiz: GameManager = null
 
     robot.brain.on('loaded', () => {
         robot.brain.set('qscores', {})
     })
 
     robot.respond(/qstart$/i, (res) => {
-        if (quizz) {
+        if (quiz) {
             res.send("Es läuft bereits ein Quizz.")
             return
         }
@@ -28,22 +28,22 @@ module.exports = async function example(robot: Robot<RocketChatBotAdapter>) {
         const qscores = robot.brain.get('qscores')
         const print = (txt) => { res.send(txt) }
 
-        quizz = new GameManager(print, qscores)
-        quizz.start()
+        quiz = new GameManager(print, qscores)
+        quiz.start()
     })
 
     robot.respond(/qstop$/i, (res) => {
-        if (quizz) {
-            quizz.stop()
-            quizz = null
+        if (quiz) {
+            quiz.stop()
+            quiz = null
         } else {
             res.send("Es läuft kein Quizz das gestoppt werden kann.")
         }
     })
 
     robot.hear(/(.*)/i, (msg) => {
-        if (quizz) {
-            quizz.handleMessage(msg.match[1], msg.message.user.name)
+        if (quiz) {
+            quiz.handleMessage(msg.match[1], msg.message.user.name)
         }
     })
 

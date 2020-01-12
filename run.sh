@@ -12,7 +12,4 @@ echo "using user: $ROCKETCHAT_USER"
 
 cd ./build
 
-export PATH="../node_modules/.bin:$PATH"
-echo "Path: $PATH"
-
-exec ../node_modules/.bin/hubot -a rocketchat "$@"
+exec node ../node_modules/hubot/bin/hubot.js -a rocketchat "$@"

@@ -10,10 +10,7 @@
 import { Robot } from 'hubot'
 import { RocketChatBotAdapter } from 'hubot-rocketchat'
 
-// import hubot external config file as will via the tsc build step:
-import * as externalConfig from '../external-scripts.json'
-
-module.exports = async function example(robot: Robot<RocketChatBotAdapter>) {
+module.exports = async function version(robot: Robot<RocketChatBotAdapter>) {
 
   robot.helpCommands().push("rc version - Tells you the Hubot, Driver and Rocket.Chat versions")
 

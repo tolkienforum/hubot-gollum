@@ -9,6 +9,7 @@ Die Projekt ist zusammen-gesucht aus verschiedenen Quellen:
  - https://github.com/vsinha/b-bot.git (Hubot + TypeScript)
  - https://github.com/AcklenAvenue/hubot-example
  - https://github.com/QuentinFchx/quizz (Quizz Skript Vorlage)
+ - http://moxquizz.de/ (Weichei, Hartei, Phrase, Quiz-Fragen, ...)
 
 
 ## Eigene Skripte
