@@ -1,7 +1,7 @@
 #!/bin/sh
 
-npm run build
-npm run lint
+#npm run build
+#npm run lint
 
 # npm version patch
 
