@@ -3,7 +3,7 @@
 npm run build
 npm run lint
 
-npm version patch
+# npm version patch
 
 docker build -t tolkienforum/gollum .
 #docker push tolkienforum/gollum
