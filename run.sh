@@ -1,9 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
-
-# npm install
-# npm run build
 
 source .env
 

@@ -1,6 +1,7 @@
 {
 	"extends": "tslint:latest",
 	"rules": {
+		"no-submodule-imports": [true, "typed-rest-client/HttpClient", "typed-rest-client/RestClient"],
 		"no-unused-expression": true,
 		"no-duplicate-variable": true,
 		"curly": true,

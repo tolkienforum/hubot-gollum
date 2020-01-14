@@ -13,7 +13,7 @@ module.exports = async function uptime(robot: Robot<RocketChatBotAdapter>) {
 
     const bootTime = moment()
 
-    return robot.respond(/uptime/igm, (res: any) => {
+    return robot.respond(/uptime/igm, (res) => {
 
         // typecast to use the .format lib declared above without a type warning... pretty janky.
         const up = (moment.duration(moment().diff(bootTime)) as any).format(customTemplate, {trim: false})

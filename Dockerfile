@@ -7,4 +7,4 @@ RUN npm install
 RUN npm run build
 
 # start the bot
-CMD ["/opt/run.sh"]
+ENTRYPOINT ["/opt/run.sh"]
