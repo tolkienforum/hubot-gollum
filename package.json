@@ -21,7 +21,8 @@
     "moment-duration-format": "^2.3.2",
     "quizz": "^0.10.0",
     "typed-rest-client": "^1.7.1",
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.4",
+    "websocket-extensions": ">=0.1.4"
   },
   "devDependencies": {
     "@types/hubot": "^2.19.5",
