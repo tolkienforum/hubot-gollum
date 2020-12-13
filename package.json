@@ -16,17 +16,17 @@
     "hubot": "3",
     "hubot-games": "^1.0.0",
     "hubot-help": "^1.0.1",
-    "hubot-rocketchat": "rocketchat/hubot-rocketchat",
-    "moment": "^2.24.0",
+    "hubot-rocketchat": "github:rocketchat/hubot-rocketchat",
+    "moment": "^2.29.1",
     "moment-duration-format": "^2.3.2",
     "quizz": "^0.10.0",
-    "typed-rest-client": "^1.7.1",
-    "typescript": "^3.7.4",
+    "typed-rest-client": "^1.8.0",
+    "typescript": "^3.9.7",
     "websocket-extensions": ">=0.1.4"
   },
   "devDependencies": {
     "@types/hubot": "^2.19.5",
-    "@types/node": "^13.1.6",
+    "@types/node": "^13.13.36",
     "tslint": "^5.20.1"
   }
 }
